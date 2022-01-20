@@ -64,53 +64,50 @@ Infine usando la destrutturazione creiamo un nuovo array,
 
 // # Function
 
-/* const randomNumber = (min) => {
+const randomNumber = (min) => {
     const number = Math.floor(Math.random() * (min + 1));
-    console.log(number);
     return number;
 }
 
-let points = 0;
-let fouls = 0;
-
-const team = [
+const teams = [
     {
         name: 'Inter',
-        points,
-        fouls,
+        points: 0,
+        fouls: 0,
     },
     {
         name: 'Milan',
-        points,
-        fouls,
+        points: 0,
+        fouls: 0,
     },
     {
         name: 'Napoli',
-        points,
-        fouls,
+        points: 0,
+        fouls: 0,
     },
     {
         name: 'Atalanta',
-        points,
-        fouls,
+        points: 0,
+        fouls: 0,
     },
     {
         name: 'Juventus',
-        points,
-        fouls,
+        points: 0,
+        fouls: 0,
     },
     {
         name: 'Lazio',
-        points,
-        fouls,
+        points: 0,
+        fouls: 0,
     },
 ];
 
-for (let i = 0; i < team.length; i++) {
-    const randomPoints = team[i].points;
-    randomPoints.randomNumber(20);
-    console.log(randomPoints)
-} */
 
-/* const number = randomNumber(20); */
+for (let i = 0; i < teams.length; i++) {
+    
+    teams[i].points += randomNumber(100);
+    teams[i].fouls += randomNumber(100);
+    
+}
 
+console.log(teams);
