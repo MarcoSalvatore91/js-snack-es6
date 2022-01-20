@@ -7,7 +7,41 @@ Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e pe
 Stampare ain console la bici con peso minore utilizzando destructuring e template literal
 */
 
+// BONUS: Stampare in pagina oltre che in console!
 
+const bike = [
+    {
+        name: 'Bici da città',
+        weight: 30,
+    },
+    {
+        name: 'Mountain Bike',
+        weight: 15,
+    },
+    {
+        name: 'Bici da Corsa',
+        weight: 43,
+    },
+    {
+        name: 'Fat Bike',
+        weight: 70,
+    },
+    {
+        name: 'Bici Ibrida',
+        weight: 53,
+    },
+    {
+        name: 'E-Bike',
+        weight: 35,
+    },
+];
+
+const info = [...bike];
+
+for (let key in info) {
+    const {weight} = info[key];
+    console.log(weight)
+}
 
 // Snack 2
 /* 
@@ -18,3 +52,5 @@ Punti fatti e falli subiti.
 Infine usando la destrutturazione creiamo un nuovo array,
  i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 */
+
+// BONUS: Stampare in pagina oltre che in console!
