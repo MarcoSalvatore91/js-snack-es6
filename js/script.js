@@ -9,7 +9,7 @@ Stampare in console la bici con peso minore utilizzando destructuring e template
 
 // BONUS: Stampare in pagina oltre che in console!
 
-/* const bike = [
+/* const bikes = [
     {
         name: 'Bici da città',
         weight: 30,
@@ -36,10 +36,19 @@ Stampare in console la bici con peso minore utilizzando destructuring e template
     },
 ];
 
-for (let key in bike) {
-    const {name, weight} = bike[key];
-    console.log(`La bici che pesa di meno è ${name} ${weight}`)
-} */
+let minWeight = bikes[0].weight;
+let result = '';
+
+for (let item in bikes) {
+
+    const {name, weight} = bikes[item];
+
+    if (weight < minWeight) {
+        minWeight = bikes[item];
+    }
+} 
+
+console.log(`La bici che pesa di meno è la ${minWeight.name}`); */
 
 // Snack 2
 /* 
@@ -55,44 +64,53 @@ Infine usando la destrutturazione creiamo un nuovo array,
 
 // # Function
 
-const randomNumber = (min) => {
+/* const randomNumber = (min) => {
     const number = Math.floor(Math.random() * (min + 1));
     console.log(number);
     return number;
 }
 
+let points = 0;
+let fouls = 0;
+
 const team = [
     {
         name: 'Inter',
-        points: 0,
-        fouls: 0,
+        points,
+        fouls,
     },
     {
         name: 'Milan',
-        points: 0,
-        fouls: 0,
+        points,
+        fouls,
     },
     {
         name: 'Napoli',
-        points: 0,
-        fouls: 0,
+        points,
+        fouls,
     },
     {
         name: 'Atalanta',
-        points: 0,
-        fouls: 0,
+        points,
+        fouls,
     },
     {
         name: 'Juventus',
-        points: 0,
-        fouls: 0,
+        points,
+        fouls,
     },
     {
         name: 'Lazio',
-        points: 0,
-        fouls: 0,
+        points,
+        fouls,
     },
 ];
 
-const number = randomNumber(20);
+for (let i = 0; i < team.length; i++) {
+    const randomPoints = team[i].points;
+    randomPoints.randomNumber(20);
+    console.log(randomPoints)
+} */
+
+/* const number = randomNumber(20); */
 
