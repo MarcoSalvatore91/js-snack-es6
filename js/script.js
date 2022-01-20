@@ -102,12 +102,22 @@ const teams = [
     },
 ];
 
+const result = []
 
 for (let i = 0; i < teams.length; i++) {
     
+    const name = teams[i].name;
+    
     teams[i].points += randomNumber(100);
     teams[i].fouls += randomNumber(100);
+    fouls = teams[i].fouls;
+
+    result.push({name, fouls})
     
 }
 
-console.log(teams);
+console.log(result);
+
+
+
+/* console.log(teams); */
