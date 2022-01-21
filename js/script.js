@@ -128,20 +128,22 @@ La funzione ritornerà un nuovo array con i valori che hanno la posizione compre
 Usiamo i nuovi metodi degli array visti oggi in classe.
 */
 
+const getBetweenArray = (arr, a, b) => {
+    
+    const newArray = arr.filter((newArr, items) => {
+    
+        if (items >= a && items <= b) {
+            return true;
+        }
+        });
+    
+    console.log(newArray);
+
+}
+
 const names = ['Robert', 'Cristiano', 'Sam', 'Matt', 'Harry', 'Christian', 'Joe', 'Peter', 'Gianluca', 'Alex']
 
-let newNewArray;
-
-const newArray = names.filter((name, i) => {
-
-    if (i >= 3 && i <= 8) {
-        return true;
-    }
-    });
-
-console.log(newArray);
-
-
+const newArray = getBetweenArray(names, 3, 8);
 
 // # SNACK 4
 
