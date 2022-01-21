@@ -128,19 +128,19 @@ La funzione ritornerà un nuovo array con i valori che hanno la posizione compre
 Usiamo i nuovi metodi degli array visti oggi in classe.
 */
 
-/* const number = (arr, a, b) => {
-    const arr = [a, b];
-    if (item <= b) {
-    const number = arr.map((item) => {
-            return (a + 1);
-        });
+const names = ['Robert', 'Cristiano', 'Sam', 'Matt', 'Harry', 'Christian', 'Joe', 'Peter', 'Gianluca', 'Alex']
+
+let newNewArray;
+
+const newArray = names.filter((name, i) => {
+
+    if (i >= 3 && i <= 8) {
+        return true;
     }
-    console.log(arr);
-}
+    });
 
-let randomNumber;
+console.log(newArray);
 
-const betweenNumbers = number(randomNumber, 2, 10); */
 
 
 // # SNACK 4
@@ -156,7 +156,7 @@ ES (marco de iulio => Marco de iulio);
 // ! BONUS  nei nomi sulle targhe l'iniziale di ogni parola deve essere maiuscola
 // ! ES.: (marco de iulio  => Marco De Iulio)
 
-const students = [
+/* const students = [
     { name: 'robert de niro', id: 197, grades: 126 },
     { name: 'cristiano ronaldo', id: 131, grades: 67 },
     { name: 'sam fisher', id: 36, grades: 168 },
@@ -176,7 +176,7 @@ students.forEach((student) => {
 
 console.log(allName);
 
-const grades = students.filter((student) => {
+const getGrades = students.filter((student) => {
     if (student.grades < 70) {
         return true;
     }
@@ -184,10 +184,10 @@ const grades = students.filter((student) => {
 
 console.log(grades)
 
-const idGrades = students.filter((student) => {
+const getIdGrades = students.filter((student) => {
     if (student.grades < 70 && student.id > 120) {
         return true;
     }
 })
 
-console.log(idGrades)
+console.log(idGrades) */
