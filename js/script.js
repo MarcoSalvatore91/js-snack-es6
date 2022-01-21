@@ -157,11 +157,11 @@ ES (marco de iulio => Marco de iulio);
 // ! ES.: (marco de iulio  => Marco De Iulio)
 
 const students = [
-    { name: 'robert de niro', id: 197, grades: 32 },
-    { name: 'cristiano ronaldo', id: 111, grades: 67 },
-    { name: 'sam fisher', id: 36, grades: 12 },
+    { name: 'robert de niro', id: 197, grades: 126 },
+    { name: 'cristiano ronaldo', id: 131, grades: 67 },
+    { name: 'sam fisher', id: 36, grades: 168 },
     { name: 'matt damon', id: 83, grades: 44 },
-    { name: 'harry potter', id: 51, grades: 54 },
+    { name: 'harry potter', id: 51, grades: 154 },
     { name: 'christian de sica', id: 312, grades: 5 },
 ];
 
@@ -175,3 +175,19 @@ students.forEach((student) => {
 })
 
 console.log(allName);
+
+const grades = students.filter((student) => {
+    if (student.grades < 70) {
+        return true;
+    }
+})
+
+console.log(grades)
+
+const idGrades = students.filter((student) => {
+    if (student.grades < 70 && student.id > 120) {
+        return true;
+    }
+})
+
+console.log(idGrades)
